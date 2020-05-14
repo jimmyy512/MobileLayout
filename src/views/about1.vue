@@ -1,12 +1,15 @@
 <template>
     <div id="about1">
-        <div class="centerBlock"></div>
+        <div class="topBlock"></div>
         <div class="listView">
             <div class="block" v-for="(it,index) in data" :key="index">
                 <div>
                     {{`id : ${it.id} index: ${index}`}}
                 </div>
             </div>
+        </div>
+        <div class="footer">
+            this is footer
         </div>
     </div>
 </template>
@@ -28,16 +31,23 @@ export default {
 
 <style lang="scss" scoped>
 #about1{
+    $topBlockHeight:30%;
+    $listViewHeight:65%;
+    $footerHeight:5%;
     height:calc(100% - #{$MainTitleHeight} - 10px);
-    margin:10px 10px 0px 10px;
-    .centerBlock{
-        height:30%;
+    %BlockCss{
+        margin:10px 10px 0px 10px;
+    }
+    .topBlock{
+        @extend %BlockCss;
+        height:$topBlockHeight;
         background-color: skyblue;
     }
     .listView{
-        margin-top:10px;
+        @extend %BlockCss;
+        margin-bottom:10px;
         padding-bottom: 10px;
-        height:calc(100% - 30% - 10px);
+        height:calc(#{$listViewHeight} - 20px);
         background-color: rgb(155, 214, 77);
         overflow: auto;
         display:flex;
@@ -54,6 +64,14 @@ export default {
                 text-align:center;
             }
         }
+    }
+    .footer{
+        height:$footerHeight;
+        background-color: gray;
+        color:white;
+        display:flex;
+        align-items:center;
+        justify-content: center;
     }
 }
 </style>
