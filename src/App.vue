@@ -1,8 +1,18 @@
 <template>
   <div id="app">
+    <my-title></my-title>
     <router-view/>
   </div>
 </template>
+
+<script>
+import myTitle from "@/components/myTitle";
+export default {
+  components: {
+    myTitle
+  }
+};
+</script>
 
 <style lang="scss">
 *{

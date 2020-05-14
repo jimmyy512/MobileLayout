@@ -28,7 +28,7 @@ export default {
 .header{
     background-color: orange;
     width:100%;
-    height:5%;
+    height:$MainTitleHeight;
     display: flex;
     justify-content: center;
     align-items: center;
