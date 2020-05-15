@@ -1,4 +1,4 @@
-# layout
+# 手機板面架構
 
 ## Project setup
 ```
@@ -10,15 +10,5 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Online Demo  
+https://jimmyy512.github.io/MobileLayout/.
