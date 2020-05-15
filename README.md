@@ -11,4 +11,4 @@ npm run serve
 ```
 
 ### Online Demo  
-https://jimmyy512.github.io/MobileLayout/.
+https://jimmyy512.github.io/MobileLayout/
